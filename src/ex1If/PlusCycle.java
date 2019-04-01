@@ -1,4 +1,4 @@
-package backjjEx;
+package ex1If;
 
 import java.util.Scanner;
 
@@ -6,10 +6,10 @@ public class PlusCycle {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("0~99»çÀÌÀÇ ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä>");
+		System.out.println("0~99ì‚¬ì´ì˜ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”>");
 		int num = Integer.parseInt(scanner.nextLine());
 		if (num < 0 || num > 99) {
-			System.out.println("¼ıÀÚ°¡ ³Ê¹« ÀÛ°Å³ª Å®´Ï´Ù. ´Ù½ÃÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ìˆ«ìê°€ ë„ˆë¬´ ì‘ê±°ë‚˜ í½ë‹ˆë‹¤. ë‹¤ì‹œì…ë ¥í•˜ì„¸ìš”");
 			num = Integer.parseInt(scanner.nextLine());
 		}
 
@@ -18,8 +18,8 @@ public class PlusCycle {
 		int i = 0;
 		int tmp = num;
 		boolean a = true;
-		
-		// ÇÕÇÑ °ªÀÇ ÀÏÀÇ ÀÚ¸®¼ö¿Í ±âÁ¸ÀÇ ÀÏÀÇ ÀÚ¸®¼öÀÇ ÇÕÀÌ ÀÌ·ç¾îÁ®¾ßÇÔ.
+
+		// í•©í•œ ê°’ì˜ ì¼ì˜ ìë¦¬ìˆ˜ì™€ ê¸°ì¡´ì˜ ì¼ì˜ ìë¦¬ìˆ˜ì˜ í•©ì´ ì´ë£¨ì–´ì ¸ì•¼í•¨.
 		value10 = num / 10;
 		while (a) {
 			if (num >= 10) {
@@ -27,13 +27,13 @@ public class PlusCycle {
 			} else
 				value1 = num;
 			num = value10 + value1;
-			if (tmp==(((value1*10)+num))) {
+			if (tmp == (((value1 * 10) + num))) {
 				a = false;
 			}
 			value10 = value1;
 			i++;
 		}
-		System.out.println("ÀÔ·Â¼ıÀÚÀÇ »çÀÌÅ¬ ±æÀÌ : " + i);
+		System.out.println("ì…ë ¥ìˆ«ìì˜ ì‚¬ì´í´ ê¸¸ì´ : " + i);
 	}
 
 }
