@@ -1,4 +1,4 @@
-package ex1If;
+package ex1If.backExercise;
 import java.util.*;
 
 public class AverageEx {
