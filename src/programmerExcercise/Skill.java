@@ -1,6 +1,6 @@
 package programmerExcercise;
 
-public class Test {
+public class Skill {
 
 	public static void main(String[] args) {
 		String skill = "CBD";
